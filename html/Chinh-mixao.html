@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cách làm mì xào</title>
+        <link rel="icon" type="image/x-icon" href="../img/home_image/icon.png">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/icon.css">
+        <link rel="stylesheet" href="../css/food.css">
+        <script src="../js/food_rating.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid bg-dark text-light" style="background-color: rgb(245, 242, 238);">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-warning fixed-top pe-4" >
+            <div class="container nav_space p-0" style="margin-left: 10px;">
+                <!-- <div class="collapse navbar-collapse" style="margin-left: 180px; max-width: 1000px"> -->
+                    <a href="../html/home.html"><img class="rounded-circle" src="../img/home_image/logo_nav.jpg" alt="" style="width: 50px; height: 40px; object-fit: cover;"></a>
+                    <ul class="navbar-nav" >
+                        <li class="nav-item dropdown me-4 ms-5 hover_drop_down">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bữa Sáng</a>
+                            <ul class="dropdown-menu text-bg-secondary" aria-labelledby="navbarDropdownMenuLink1">
+                                <li><a class="dropdown-item" href="../html/KhaiVi-sup_yen_mach.html">Súp Yến Mạch Ức Gà</a></li>
+                                <li><a class="dropdown-item" href="../html/Chinh-comchien.html">Cơm Chiên Hoàng Kim</a></li>
+                                <li><a class="dropdown-item" href="../html/Chinh-mixao.html">Mỳ Xào</a></li>
+                                <li><a class="dropdown-item" href="../html/DS-ramen_bo.html">Ramen Bò</a></li>
+                                <li><a class="dropdown-item" href="../html/DS-bun_bo_hue.html">Bún Bò Huế</a></li>
+                                <li><a class="dropdown-item" href="../html/DS-banh_da_cua.html">Bánh Đa Cua</a></li>
+                                <li><a class="dropdown-item" href="../html/KhaiVi-banhmi_pate.html">Bánh Mỳ Pate</a></li>
+                                <li><a class="dropdown-item" href="../html/Chinh-thit_bo_nuong.html">Thịt Bò Nướng</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4 ms-4 hover_drop_down">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bò</a>
+                            <ul class="dropdown-menu text-bg-secondary" aria-labelledby="navbarDropdownMenuLink1">
+                                <li><a class="dropdown-item" href="../html/Chinh-thit_bo_nuong.html">Thịt Bò Nướng</a></li>
+                                <li><a class="dropdown-item" href="../html/Phu-canh_kim_chi.html">Canh Kim Chi Thịt Bò</a></li>
+                                <li><a class="dropdown-item" href="../html/DS-ramen_bo.html">Ramen Bò</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4 ms-4 hover_drop_down">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gà Vịt</a>
+                            <ul class="dropdown-menu text-bg-secondary" aria-labelledby="navbarDropdownMenuLink2">
+                                <li><a class="dropdown-item" href="../html/Chinh-gachiensotme.html">Gà Chiên Sốt Me</a></li>
+                                <li><a class="dropdown-item" href="../html/Chinh-ga_nau_tieu.html">Gà Nấu Tiêu</a></li>
+                                <li><a class="dropdown-item" href="../html/Chinh-lau_ga_la_giang.html">Lẩu Gà Lá Giang</a></li>
+                                <li><a class="dropdown-item" href="../html/Chinh-comchien.html">Cơm Chiên Hoàng Kim</a></li>
+                                <li><a class="dropdown-item" href="../html/KhaiVi-sup_yen_mach.html">Súp Yến Mạch Ức Gà</a></li>
+                                <li><a class="dropdown-item" href="../html/DS-vit_quay.html">Vịt Quay Quảng Châu</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4 ms-4 hover_drop_down">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false">Heo</a>
+                            <ul class="dropdown-menu text-bg-secondary" aria-labelledby="navbarDropdownMenuLink3">
+                                <li><a class="dropdown-item" href="../html/KhaiVi-nem_nuong.html">Nem Nướng</a></li>
+                                <li><a class="dropdown-item" href="../html/Chinh-thitheokhotieu.html">Thịt Heo Kho Tiêu</a></li>
+                                <li><a class="dropdown-item" href="../html/KhaiVi-goi_cuon.html">Gỏi Cuốn Tôm Thịt</a></li>
+                                <li><a class="dropdown-item" href="../html/KhaiVi-banhmi_pate.html">Bánh Mì Pate</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4 ms-4 hover_drop_down">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false">Đồ Chay</a>
+                            <ul class="dropdown-menu text-bg-secondary" aria-labelledby="navbarDropdownMenuLink4">
+                                <li><a class="dropdown-item" href="../html/Phu-dau_hu_sot_ca_chua.html">Đậu Hũ Sốt Cà Chua</a></li>
+                                <li><a class="dropdown-item" href="../html/DS-kim_chi.html">Kim Chi</a></li>
+                                <li><a class="dropdown-item" href="../html/Phu-salad_y.html">Salad Ý</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4 ms-4 hover_drop_down">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdownMenuLink5" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hải Sản</a>
+                            <ul class="dropdown-menu text-bg-secondary" aria-labelledby="navbarDropdownMenuLink5">
+                                <li><a class="dropdown-item" href="../html/Chinh-cakhoto.html">Cá Kho Tộ</a></li>
+                                <li><a class="dropdown-item" href="../html/Phu-canh_chua_ca_nham.html">Canh Chua Cá Nhám</a></li>
+                                <li><a class="dropdown-item" href="../html/KhaiVi-goi_cuon.html">Gỏi Cuốn Tôm Thịt</a></li>
+                                <li><a class="dropdown-item" href="../html/DS-banh_da_cua.html">Bánh Đa Cua</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4 ms-4 hover_drop_down">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdownMenuLink6" role="button" data-bs-toggle="dropdown" aria-expanded="false">Đồ Chiên Nướng</a>
+                            <ul class="dropdown-menu text-bg-secondary" aria-labelledby="navbarDropdownMenuLink6">
+                                <li><a class="dropdown-item" href="../html/Chinh-thit_bo_nuong.html">Thịt Bò Nướng</a></li>
+                                <li><a class="dropdown-item" href="../html/Chinh-gachiensotme.html">Gà Chiên Sốt Me</a></li>
+                                <li><a class="dropdown-item" href="../html/KhaiVi-nem_nuong.html">Nem Nướng</a></li>
+                                <li><a class="dropdown-item" href="../html/KhaiVi-banh_bao_chien.html">Bánh Bao Chiên</a></li>
+                                <li><a class="dropdown-item" href="../html/Chinh-comchien.html">Cơm Chiên Hoàng Kim</a></li>
+                                <li><a class="dropdown-item" href="../html/DS-pizza_y.html">Pizza Ý</a></li>
+                                <li><a class="dropdown-item" href="../html/DS-vit_quay.html">Vịt Quay Quảng Châu</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4 ms-4 hover_drop_down">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdownMenuLink7" role="button" data-bs-toggle="dropdown" aria-expanded="false">Canh Súp</a>
+                            <ul class="dropdown-menu text-bg-secondary" aria-labelledby="navbarDropdownMenuLink7">
+                                <li><a class="dropdown-item" href="../html/Phu-canh_chua_ca_nham.html">Canh Chua Cá Nhám</a></li>
+                                <li><a class="dropdown-item" href="../html/Phu-canh_kim_chi.html">Canh Kim Chi Thịt Bò</a></li>
+                                <li><a class="dropdown-item" href="../html/Phu-canh_du_du.html">Canh Đu Đủ Xương Heo</a></li>
+                                <li><a class="dropdown-item" href="../html/Phu-canh_bi_do.html">Canh Bí Đỏ</a></li>
+                                <li><a class="dropdown-item" href="../html/KhaiVi-sup_yen_mach.html">Súp Yến Mạch Ức Gà</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-4 ms-4 hover_drop_down">
+                            <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdownMenuLink8" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ăn Vặt</a>
+                            <ul class="dropdown-menu text-bg-secondary" aria-labelledby="navbarDropdownMenuLink8">
+                                <li><a class="dropdown-item" href="../html/DoUong-capuchino.html">Capuchino</a></li>
+                                <li><a class="dropdown-item" href="../html/TM-banh_da_lon.html">Banh Da Lợn</a></li>
+                                <li><a class="dropdown-item" href="../html/DoUong-matcha_da.html">Matcha Latte Đá</a></li>
+                                <li><a class="dropdown-item" href="../html/DoUong-sinh_to_bo_dua.html">Sinh Tố Bơ Dừa</a></li>
+                                <li><a class="dropdown-item" href="../html/DoUong-tra_sua.html">Trà Sữa Truyền Thống</a></li>
+                                <li><a class="dropdown-item" href="../html/KhaiVi-canape.html">Canape</a></li>
+                                <li><a class="dropdown-item" href="../html/KhaiVi-banh_bao_chien.html">Bánh Bao Chiên</a></li>
+                                <li><a class="dropdown-item" href="../html/DS-pizza_y.html">Pizza Ý</a></li>
+                                <li><a class="dropdown-item" href="../html/TM-che_thai.html">Chè Thái</a></li>
+                                <li><a class="dropdown-item" href="../html/TM-kem_dua.html">Kem Dừa</a></li>
+                                <li><a class="dropdown-item" href="../html/TM-che_vai_hat_sen.html">Chè Vải Hạt Sen</a></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                <!-- </div> -->
+            </div>
+            <form action="" id="search-box">
+                <input type="search" placeholder="Công thức..." name="search" class="p-3 " style="height: 40px; ">
+                <button type="submit" ><img src="../img/home_image/search-icon.webp" alt="" style="width: 20px;"></button>
+            </form>
+            <a href="#" data-bs-target="#mymodal1" data-bs-toggle="modal"><img src="../img/home_image/acc_icon.png" alt="" style="width: 40px; margin-left: 10px;"></a>
+        </nav>
+        <header>
+            <div class="row">
+                <div class="col"></div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-3">
+                    <a href="../html/home.html"><img src="../img/home_image/icon.png" alt="logo Let Me Cook" style="width: 245px;height:260px"></a>
+                </div>
+                <div class="col-9">
+                    <div class="row justify-content-around nav-head">
+                        <div class="col-md-2 d-md-block">
+                            <div class="hover-zoom">
+                                <a href="../html/main_dished_category.html">
+                                    <img src="../img/home_image/Maindish_sm.png" alt="" class="rounded-circle img-fluid "  style="width: 170px">
+                                    <div class="overlay">Tìm hiểu</div>
+                                </a>
+                            </div>
+                            <h4 class="header-title text-center mt-4"><a href="../html/main_dished_category.html">Món Chính</a></h4>
+                        </div>
+                        <div class="col-md-2 d-md-block">
+                            <div class="hover-zoom">
+                                <a href="../html/side_dish_cate.html">
+                                    <img src="../img/home_image/sides_sm.jfif" alt="" class="rounded-circle img-fluid" style="width: 170px">
+                                    <div class="overlay">Tìm hiểu</div>
+                                </a>
+                            </div>
+                            <h4 class="header-title text-center mt-4"><a href="../html/side_dish_cate.html">Món Phụ</a></h4>
+                        </div>
+                        <div class="col-md-2 d-md-block">
+                            <div class="hover-zoom">
+                                <a href="../html/dessert_cate.html">
+                                    <img src="../img/home_image/Dessert_sm.jpeg" alt="" class="rounded-circle img-fluid" style="width: 170px">
+                                    <div class="overlay">Tìm hiểu</div>
+                                </a>
+                            </div>
+                            <h4 class="header-title text-center mt-4" style="width: 94%;"><a href="../html/dessert_cate.html">Món Tráng Miệng</a></h4>
+                        </div>
+                        <div class="col-md-2 d-md-block">
+                            <div class="hover-zoom">
+                                <a href="../html/appetizer_cate.html">
+                                    <img src="../img/home_image/khai_vi_sm.jpg" alt="" class="rounded-circle img-fluid "  style="width: 170px">
+                                    <div class="overlay">Tìm hiểu</div>
+                                </a>
+                            </div>
+                            <h4 class="header-title text-center mt-4"><a href="../html/appetizer_cate.html">Món Khai Vị</a></h4>
+                        </div>
+                        <div class="col-md-2 d-md-block">
+                            <div class="hover-zoom">
+                                <a href="../html/do_uong_cate.html">
+                                    <img src="../img/home_image/do_uong_sm.jpg" alt="" class="rounded-circle img-fluid" style="width: 170px">
+                                    <div class="overlay">Tìm hiểu</div>
+                                </a>
+                            </div>
+                            <h4 class="header-title text-center mt-4"><a href="../html/do_uong_cate.html">Đồ Uống</a></h4>
+                        </div>
+                        <div class="col-md-2 d-md-block">
+                            <div class="hover-zoom">
+                                <a href="../html/special_dish_cate.html">
+                                    <img src="../img/home_image/dac_san_sm.jpg" alt="" class="rounded-circle img-fluid" style="width: 170px">
+                                    <div class="overlay">Tìm hiểu</div>
+                                </a>
+                            </div>
+                            <h4 class="header-title text-center mt-4"><a href="../html/special_dish_cate.html">Đặc Sản</a></h4>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </header>
+        
+        <section class="row" style="margin-top: 50px;" id="mainrow">
+            <div class="col-1" ></div>
+            <div class="col-6" style="text-align: center;">
+                <hr class="hr">
+                <p class="path mb-5 text-left" style="text-align: start; color: #d86b12">
+                    <a href="../html/home.html">Let Me Cook</a> > <a href="../html/main_dished_category.html">Món Chính</a> > Mì xào
+                </p>
+                <h6 style="font-size: 15px;"><a href="../html/main_dished_category.html" style="text-decoration: none;" id="types">MÓN CHÍNH</a></h6>
+                <h1 style="font-size: 60px;">Mì Xào</h1>
+                <h5 id="shared"><i class="text-secondary ">Chia sẻ bởi</i> Nguyễn Ngọc Thái</h5>
+                <div id="main_text" style="text-align: left; font-size: 20px; margin-top: 50px;">
+                    <img src="../img/menu_Mon_chinh/mi_xao.jpg" alt="">
+                    <div class="mo_ta text_dish">
+                        <p>
+                            Nếu bạn không có nhiều thời gian để nấu bữa sáng cầu kì thì món mì xào trứng sẽ là lựa chọn tuyệt vời cho bữa sáng nhanh gọn. 
+                            Chúng ta cùng vào bếp và làm ngay thôi.
+                        </p>
+                    </div>
+                    <div class="text_dish nguyen_lieu">
+                        <h2>Nguyên liệu</h2>
+                        <br>
+                        <ul>
+                            <li>Mì 1 gói</li>
+                            <li>Trứng gà 2 quả</li>
+                            <li>Rau mùi 3 nhánh</li>
+                            <li>Hành tím 3 củ</li>
+                            <li>Hành lá 4 nhánh</li>
+                            <li>Cà chua 1 quả</li>
+                            <li>(dùng để trang trí)</li>
+                            <li>Dầu ăn 1/2 muỗng canh</li>
+                            <li>Nước mắm 1/2 muỗng canh</li>
+                            <li>Nước tương 1 muỗng canh</li>
+                        </ul>
+                    </div>
+                    <div class="text_dish cach_chuan_bi">
+                        <h2>Cách chuẩn bị và quá trình nấu</h2>
+                        <br>
+                        <ol>
+                            <li>Cho nguyên vắt mì cùng 400ml nước sôi vào tô, dùng đũa trộn đều khoảng 30 giây cho sợi mì tơi và chín thì bạn vớt ra cho vào nước lạnh và đảo đều vài lần cho đến khi mì hết nóng thì bạn vớt ra, để ráo.</li>
+                            <li>Sau khi mì ráo nước bạn cho vào tô cùng 1 gói nước sốt mì tôm và 1/3 gói muối mì tôm vào, trộn đều cho các gia vị thấm đều vào sợi mì.</li>
+                            <li>Mách nhỏ: Để mì khi ăn được ngon hơn bạn nên trụng mì vừa chín tới, khi xào mì sẽ nở và ngon. Tránh trụng trụng lâu thì khi xào mì sẽ bị bở, đứt ra.</li>
+                            <li>Sơ chế các nguyên liệu còn lại</li>
+                            <li>Hành tím bạn lột vỏ, cắt nhỏ. Hành lá nhặt sạch các lá úa, rửa sạch và cắt thành các đoạn nhỏ có chiều dài khoảng 1 lóng tay. Rau mùi bạn cũng cắt thành các đoạn có chiều dài tương tự. Cà chua bạn rửa sạch và cắt mỏng.</li>
+                            <li>Bắc chảo lên bếp, cho 1/2 muỗng canh dầu ăn vào, đợi đến khi dầu nóng thì bạn cho hành tím đã băm nhỏ vào, phi đến khi hành dậy mùi thơm thì bạn đập 1 quả trứng vào chảo.</li>
+                            <li>Dùng đũa đảo đều cho đến khi trứng chín thì bạn cho mì tôm cùng 1/2 muỗng canh nước mắm, 1 muỗng canh nước tương, hành lá và rau mùi vào. Xào và đảo đều với lửa nhỏ khoảng 2 phút cho các nguyên liệu trộn lẫn vào nhau thì tắt bếp.</li>
+                            <li>Cho mì vào chính giữa dĩa, trang trí bằng 1 vài lát cà chua cắt mỏng xung quanh. Sau đó ốp la trứng và rắc thêm 1 ít muối mì tôm lên, cho lên trên dĩa là ta đã hoàn thành món ăn này rồi!</li>
+                        </ol>
+                    </div>
+                    <div class="text_dish thoi_gian_nau">
+                        <h2>Thời gian nấu nướng</h2>
+                        <br>
+                        <ul>
+                            <li>chỉ với 15 phút, bạn đã có một tô mì xào với trứng thơm ngon</li>
+                        </ul>
+                    </div>
+                    <div class="text_dish luu_y">
+                        <h2>Lưu ý</h2>
+                        <br>
+                        <ul>
+                            <li>Kiểm tra hạn sử dụng của mì gói</li>
+                            <li>Nêm nếm gia vị vừa phải</li>
+                        </ul>
+                    </div>
+                    <div class="text_dish dinh_duong">
+                        <h2>Thưởng Thức</h2>
+                        <br>
+                        <ul>
+                            <li>Mì xào trứng sau khi hoàn thành sẽ có mùi thơm hấp dẫn, miếng trứng thì béo ngon, sợi mì dai, mềm vừa ăn. Đảm bảo đây sẽ là một món ăn sáng thơm ngon, nhanh chóng để các bạn thưởng thức nhanh và bắt đầu một ngày mới.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-5 p-3" style="background-color: #0e0f0f79;">
+                    <div class="col-12">
+                        <h2 class="text-center">ĐỂ LẠI ĐÁNH GIÁ CỦA BẠN</h2>
+                        <form action="" style="text-align: left;" id="binh_luan">
+                            <div class="row">
+                                <div class="col-6"><label for="emails">EMAIL:</label><input type="email" class="form-control" id="emails" onblur="check_mail()">
+                                    <span class="text-danger" id="span1">*</span>
+                                </div>
+                                <div class="col-6"><label for="emails">Họ Và Tên:</label><input type="text" class="form-control" id="names" onblur="check_name()">
+                                    <span class="text-danger" id="span2">*</span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-12" style="text-align: center;"><label for="">Đánh Giá:</label>
+                                    <br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" id="star1" onclick="count_star(this)" onmouseenter="ratings(this)" onmouseleave="not_rating()">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                      </svg>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" id="star2" onclick="count_star(this)" onmouseenter="ratings(this)" onmouseleave="not_rating()">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                      </svg>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" id="star3" onclick="count_star(this)" onmouseenter="ratings(this)" onmouseleave="not_rating()">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                      </svg>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" id="star4" onclick="count_star(this)" onmouseenter="ratings(this)" onmouseleave="not_rating()">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                      </svg>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" id="star5" onclick="count_star(this)" onmouseenter="ratings(this)" onmouseleave="not_rating()">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                      </svg>
+                                      <br>
+                                      <span id="ratingssss">0/5</span>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-12">
+                                        <br>
+                                        <label for="">Nhận xét</label>
+                                        <br>
+                                        <textarea name="" cols="30" rows="10" class="form-control" id="comments"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: 10px;">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <button class="btn btn-success " type="button" onclick="submitted()">Đăng</button>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row" style="padding-top: 30px;">
+                                    <div class="col-12">
+                                        <h2>TẤT CẢ NHẬN XÉT <span id="countss">(0)</span></h2>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-top: 30px;">
+                                    <div class="col-12">
+                                        <p id="comment_holder">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-3" id="categories">
+                <div class="row" id="advices" style="border: 1px lightblue dashed;">
+                    <div class="col-12 pt-2" style="background-color: rgb(240, 95, 11)">
+                        <h2 class="text-center">BẠN CÓ THỂ THÍCH</h2>
+                    </div>
+                    <div class="row suggest p-3">
+                        <div class="col-6" >
+                            <a href="../html/Chinh-comchien.html"><img src="../img/menu_Mon_chinh/com_chien.jpg"  alt="" ></a>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-center name_suggest">
+                            <h3 style="text-align: center;"><a href="../html/Chinh-comchien.html">Cơm Chiên Hoàng Kim</a></h3>
+                        </div>
+                    </div>
+                    <div class="row suggest p-3">
+                        <div class="col-6" >
+                            <a href="../html/Phu-dau_hu_sot_ca_chua.html"><img src="../img/menu_MonPhu/dau-hu-sot-ca-chua.jpg"  alt="" ></a>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-center name_suggest">
+                            <h3 style="text-align: center;"><a href="../html/Phu-dau_hu_sot_ca_chua.html">Đậu Hũ Sốt Cà Chua</a></h3>
+                        </div>
+                    </div>
+                    <div class="row suggest p-3">
+                        <div class="col-6" >
+                            <a href="../html/TM-che_thai.html"><img src="../img/menu_MonTrang Mieng/che-thai.jpg"  alt="" ></a>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-center name_suggest">
+                            <h3 style="text-align: center;"><a href="../html/TM-che_thai.html">Chè Thái</a></h3>
+                        </div>
+                    </div>
+                    <div class="row suggest p-3">
+                        <div class="col-6" >
+                            <a href="../html/DS-ramen_bo.html"><img src="../img/menu_DacSan/ramen-bo.jpg"  alt="" ></a>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-center name_suggest">
+                            <h3 style="text-align: center;"><a href="../html/DS-ramen_bo.html">Ramen Bò</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row" style="border: 1px lightblue dashed;padding-top:15px;padding-bottom:20px">
+                    <div class="col-12">
+                        <img src="../img/home_image/logo_section3.jpg" style="width: 200px; margin-left: 50%; transform: translateX(-50%);" alt="">
+                        <hr style="width:250px;border:3px rgb(70, 233, 217) solid;margin-left:73px" class="hr" >
+                            <h2 class="text-center">Hi! Chúng tôi là người tạo cái web này</h2>
+                            <p>
+                                Đây là trang web đầu tay do chúng tôi tạo ra để giới thiệu về các món ăn và cũng như chia sẻ công thức, tuy nhiên chúng tôi
+                                cũng có vài thiếu sót trong quá trình thiết kế web cũng như giao diện, chúng tôi rất mong nhận được những lời đóng góp từ bạn. 
+                            </p>
+                        <a href="../html/gioithieu.html" class="text-info" style="text-decoration: none; font-size: larger;">Tìm hiểu thêm về chúng tôi </a>
+                    </div>
+                </div>                   
+            </div>
+            <div class="col-1"></div>
+        </section>
+        <div class="row" style="background-color: #71dbcd96;">
+            <div class="col-4"></div>
+            <div class="col-4 mt-3" style="text-align: center;">
+                <h1>NHẬP EMAIL ĐỂ NHẬN NHỮNG THÔNG BÁO MỚI NHẤT</h1>
+                <form style="text-align: left;">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Nhập Email Của Bạn:</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Tuyệt,tôi muốn biết thêm nhiều công thức mới!</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">THEO DÕI</button>
+                  </form>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <footer>
+            <div class="row justify-content-center" style="width: 100%;">
+                <ul class="nav justify-content-between col-12" style="width: 60%; font-size: 25px;">
+                    <li class="nav-item"><a class="nav-link text-light" href="../html/home.html">TRANG CHỦ</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="../html/gioithieu.html">GIỚI THIỆU</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="">CÔNG THỨC MỚI</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="">CHÍNH SÁCH</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="">LIÊN HỆ</a></li>
+                </ul>   
+            </div>
+            <div class="row text-center mt-5" >
+                <h4>Kết nối trên:</h4>
+                <div class="col-12">
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg></a> &nbsp;
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg></a> &nbsp;
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                      </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center mt-5">
+                <p class="text-secondary">
+                    Nguyễn Văn Bảo - Gò Vấp - Hồ Chí Minh <br>
+                    Email: emailcc@gmail.com - Hotline 0984 000 059-0243 825 29 29 <br>
+                    Bản quyền © 2024 nauco29.com . Mọi quyền được bảo lưu<br>
+                    Thiết kế website nhà hàng bởi Thái Nghĩa<br>
+                </p>
+                
+            </div>
+        </footer>
+        <div class="modal fade" id="mymodal1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div
+                class="modal-dialog modal-lg"
+                role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalTitleId">
+                            Đăng Nhập
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form">
+                            <div class="form-group ">
+                                <label for="">Tên Đăng Nhập:</label>
+                                <input type="text" name="" id="tdn" class="form-control">
+                                <span class="text-danger">*</span>
+                            </div>
+                            <div class="form-group ">
+                                <label for="">Mật Khẩu:</label>
+                                <input type="password" name="" id="mk" class="form-control">
+                                <span class="text-danger">*</span>
+                            </div>
+                            <div class="form-group ">
+                                <a href="../html/dangkythanhvien.html">Tạo tài khoản</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary" onclick="dang_nhap()">Đăng Nhập</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

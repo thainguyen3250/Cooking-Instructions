@@ -1,0 +1,159 @@
+.nav-link.dropdown-toggle{
+    color:rgb(24, 22, 22);
+}
+
+
+/* chỉnh chữ cho nav */
+.nav-text{
+    font-size: 20px;
+    font-weight: 550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}   
+#search-box{
+    background-color: #fff;
+    border-radius: 15px;
+}
+#search-box input{
+    border: none;
+    outline: none;
+    color: #202020;
+    background: none;
+}
+#search-box button{
+    border: none;
+    background: none;
+    outline: none;
+    margin-right: 10px;
+}
+/* Làm hover cho dropdown */
+.hover_drop_down:hover ul.dropdown-menu{
+    display: block;
+}
+
+.hover_drop_down:hover > a{
+    color: rgba(238, 16, 16, 0.932);
+    border-top: 3px solid rgba(238, 16, 16, 0.932);
+    padding-top: 2px;
+}
+/* làm hover cho header */
+header{
+    margin-top: 60px;
+    /* border-bottom: #fff 1px solid; */
+}
+
+.hover-zoom{
+    position: relative;
+}
+
+.hover-zoom img{
+    transition: all 0.5s ease-in-out;
+    object-fit: cover;
+    height: 170px;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 80%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+.hover-zoom:hover .overlay{
+    opacity: 1;
+}
+.nav-head img:hover
+{
+    transform: scale(1.1);
+}
+
+.header-title{
+    width: 80%;
+}
+.header-title a{
+    text-decoration: none;
+    color: #fff;
+}
+.header-title a:hover{
+    color: chocolate;
+}
+
+/* thanh ngang */
+/* section */
+.path a{
+    text-decoration: none;
+    color: #d86b12;
+}
+.path a:hover{
+    text-decoration: none;
+    color: rgb(214, 212, 53);
+}
+#types
+{
+    position: relative;
+    color: rgb(243, 126, 145);
+}
+#types:hover
+{
+    background-color: rgb(189, 47, 70);
+    color: white;
+}
+#types::before{
+    content: "";
+    border-top: 2px solid #7bdcb5;
+    width: 50%;
+    position: absolute;
+    bottom: -50%;
+    left: 25%;
+}
+
+.text_dish{
+    background-color: #202020;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.text_dish:hover
+{
+    box-shadow: 1px 1px 12px white;
+}
+.text_dish h2{
+    font-weight: 400;
+    color: aqua;
+}
+#main_text img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* aside */
+.suggest img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+.suggest img:hover{
+    transform: scale(1.1);
+}
+.name_suggest a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 300;
+}
+.name_suggest a:hover{
+    color: #eb3312; 
+}
+/* footer */
+footer{
+    clear: both;
+    position: relative;
+    margin-top: 80px;
+}
+

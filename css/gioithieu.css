@@ -1,0 +1,104 @@
+
+header
+{
+    background-image: url(../img/dangkythanhvien_image/top-view-delicious-spaghetti-with-copy-space_23-2150857950.jpg);
+    width: auto;
+    height: 1200px;
+    overflow-x: hidden;
+    background-size: cover;
+}
+.nav-link.dropdown-toggle{
+    color:rgb(24, 22, 22);
+}
+.hover_drop_down:hover > a{
+    color: rgba(238, 16, 16, 0.932);
+    border-top: 3px solid rgba(238, 16, 16, 0.932);
+    padding-top: 2px;
+}
+#form
+{
+    font-size: 35px;
+}
+#dangky:hover
+{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+}
+/* chỉnh chữ cho nav */
+.nav-text, nav{
+    font-size: 20px;
+    font-weight: 550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}   
+#search-box{
+    background-color: #fff;
+    border-radius: 15px;
+}
+#search-box input{
+    border: none;
+    outline: none;
+    color: #202020;
+    background: none;
+}
+#search-box button{
+    border: none;
+    background: none;
+    outline: none;
+    margin-right: 10px;
+}
+.card:hover
+{
+    scale: 1.1;
+    box-shadow: 2px 2px 20px white;
+    border: none;
+}
+.card
+{
+    border-radius: 50px ;
+}
+/* Làm hover cho dropdown */
+.hover_drop_down:hover ul.dropdown-menu{
+    display: block;
+}
+
+.hover_drop_down:hover > a{
+    color: rgb(238, 138, 7);
+}
+/* làm hover cho header(ko zoom duoc) */
+header{
+    margin-top: 60px;
+}
+a
+{
+    text-decoration: none;
+}
+.hover-zoom{
+    position: relative;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    text-align: center;
+}
+.hover-zoom:hover .overlay{
+    opacity: 1;
+}
+.hover-zoom h4 a{
+    text-decoration: none;
+    color: #fff;
+}
+.hover-zoom h4 a:hover{
+    color: chocolate;
+}
+span{
+    font-size: 22px;
+}

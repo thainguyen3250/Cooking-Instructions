@@ -1,0 +1,200 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.nav-link.dropdown-toggle{
+    color:rgb(24, 22, 22);
+}
+
+/* chỉnh chữ cho nav */
+.nav-text{
+    font-size: 20px;
+    font-weight: 550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}   
+#search-box{
+    background-color: #fff;
+    border-radius: 15px;
+}
+#search-box input{
+    border: none;
+    outline: none;
+    color: #202020;
+    background: none;
+}
+#search-box button{
+    border: none;
+    background: none;
+    outline: none;
+    margin-right: 10px;
+} 
+
+/* Làm hover cho dropdown */
+.hover_drop_down:hover ul.dropdown-menu{
+    display: block;
+}
+
+.hover_drop_down:hover > a{
+    color: rgba(238, 16, 16, 0.932);
+    border-top: 3px solid rgba(238, 16, 16, 0.932);
+    padding-top: 2px;
+}
+/* làm hover cho header */
+header{
+    margin-top: 60px;
+}
+
+.hover-zoom{
+    position: relative;
+}
+
+.hover-zoom img{
+    transition: all 0.5s ease-in-out;
+    object-fit: cover;
+    height: 170px;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 80%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+.hover-zoom:hover .overlay{
+    opacity: 1;
+}
+.nav-head img:hover
+{
+    transform: scale(1.1);
+}
+
+.header-title{
+    width: 80%;
+}
+.header-title a{
+    text-decoration: none;
+    color: #fff;
+}
+.header-title a:hover{
+    color: chocolate;
+}
+/* chỉnh sửa nút di chuyển trái phải */
+.carousel-control-prev, .carousel-control-next {
+    width: 3%;
+    height: 100%;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 100%;
+    height: 100%;
+}
+.carousel-control-prev-icon{
+    position: absolute;
+    left: 0;
+}
+.carousel-control-next-icon{
+    position: absolute;
+    right: 0;
+}
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover{
+    background-color: black;
+}
+/* làm  mega menu*/
+/*
+    favicon
+*/
+
+/* tạo hiệu ứng cho phần menu lớn */
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.carousel-caption h1{
+    opacity: 0;
+    font-family: tahoma;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.carousel-item:hover .image{
+    opacity: 0.3;
+}
+.carousel-item:hover .middle , .carousel-item:hover h1{
+    opacity: 1;
+}
+.text {
+    background-color: rgba(221, 172, 11, 0.973);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* thanh ngang */
+hr{
+    border: 3px #05eeff solid; 
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* card trong section2 (công thức nổi bật)*/
+.card{
+    border: none;
+}
+.card-img-top{
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    transition: all 0.7s ease-in-out;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.card-body{
+    border: 1px #7bdcb5 solid;
+    border-top: none;
+    background-color: rgb(43, 40, 36);
+}
+.btn-warning{
+    position: relative;
+}
+.btn-warning::before{
+    content: "";
+    border-top: 2px solid #7bdcb5;
+    width: 50%;
+    position: absolute;
+    bottom: 150%;
+    left: 25%;
+}
+/* footer */
+footer{
+    clear: both;
+    position: relative;
+    margin-top: 80px;
+}
